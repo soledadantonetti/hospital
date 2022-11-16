@@ -1,0 +1,29 @@
+module.exports = {
+    
+    listar: async (req,res) => {
+        res.json({message: "Lista de pacientes. <br/> Paciente 1 http://localhost:5000/api/pacientes/1"})
+        
+    },
+    
+    crear: async (req, res) => {
+
+    },
+
+    listarInfo: async (req,res) => {
+
+    },
+    
+    informacion1: async (req,res) => {
+        
+        try{
+            console.log('Entro a información 1')
+            res.json({
+                message : 'Información del paciente 1'
+        })
+
+
+        }catch(err){
+            console.log(err)
+        }
+    }
+}
